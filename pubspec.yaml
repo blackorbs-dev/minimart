@@ -1,0 +1,46 @@
+name: minimart
+description: "MiniMart – eCommerce Preview App"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  flutter_svg: ^2.1.0
+  collection: ^1.18.0
+  riverpod_annotation: ^2.6.1
+  dotted_border: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.13
+
+flutter:
+
+  uses-material-design: true
+
+  #--------------- LOCAL ASSETS ------------------#
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  #--------------- LOCAL FONTS ------------------#
+  fonts:
+    - family: IBMPlexSans
+      fonts:
+        - asset: assets/fonts/ibm_plex_sans_variable.ttf
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/ibm_plex_mono_medium.ttf
+          weight: 500
