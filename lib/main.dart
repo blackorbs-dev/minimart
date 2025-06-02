@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'ui/screens/home/home_screen.dart';
 import 'ui/state/toast_listener.dart';
-import 'theme/theme.dart';
+import 'ui/theme/theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
