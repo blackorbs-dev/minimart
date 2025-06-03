@@ -97,7 +97,7 @@ dart pub run build_runner build --delete-conflicting-outputs
 flutter run
 ```
 
-📷 Figma Design Reference
+## 📷 Figma Design Reference
 
 [Figma Design URL](https://www.figma.com/design/ff6kLW7UB7N7JH8P33j39j/Alphatwelve-Mobile-App-Developer-Assessment)
 
