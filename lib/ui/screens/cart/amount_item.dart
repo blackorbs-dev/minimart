@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DetailsItem extends StatelessWidget{
-  const DetailsItem({super.key, required this.title, required this.amount, this.textStyle});
+class AmountItem extends StatelessWidget{
+  const AmountItem({super.key, required this.title, required this.amount, this.textStyle});
 
   final String title;
   final String amount;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/cart/cart_provider.dart';
+import '../../../providers/cart/cart_items_provider.dart';
 import '../../../providers/product/product_provider.dart';
 import '../../components/bottom_bar_button.dart';
 import '../../components/main_container.dart';
@@ -74,7 +74,7 @@ class ProductDetailsScreen extends ConsumerWidget{
                   );
                 }
                 else {
-                  ref.read(cartProvider.notifier).add(product);
+                  ref.read(cartItemsProvider.notifier).add(product);
                 }
               },
               containerColor: isInCart ? theme.colorScheme.outline : null,

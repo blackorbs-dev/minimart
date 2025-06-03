@@ -4,10 +4,10 @@ import '../../models/product.dart';
 import '../toast/toast_message_provider.dart';
 import 'entity.dart';
 
-part 'cart_provider.g.dart';
+part 'cart_items_provider.g.dart';
 
 @riverpod
-class Cart extends _$Cart {
+class CartItems extends _$CartItems {
 
   void add(Product product) {
     state = {

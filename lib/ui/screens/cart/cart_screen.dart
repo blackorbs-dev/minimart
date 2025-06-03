@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/cart/cart_provider.dart';
-import '../../../providers/cart/cart_state.dart';
+import '../../../providers/cart/cart_items_provider.dart';
+import '../../../providers/cart/cart_state_provider.dart';
 import '../../components/bottom_bar_button.dart';
 import '../../components/main_container.dart';
-import 'details_item.dart';
-import 'item_card.dart';
+import 'amount_item.dart';
+import 'cart_item_card.dart';
 
 class CartScreen extends ConsumerWidget{
   const CartScreen({super.key});
@@ -31,7 +31,7 @@ class CartScreen extends ConsumerWidget{
                                 return CartItemCard(
                                     item: item,
                                     actionCallback: (action){
-                                      ref.read(cartProvider.notifier)
+                                      ref.read(cartItemsProvider.notifier)
                                           .handleAction(item.product.id, action);
                                     }
                                 );
@@ -47,9 +47,9 @@ class CartScreen extends ConsumerWidget{
                                 padding: const EdgeInsets.only(bottom: 6, top: 12),
                                 child: Text('Order Info', style: theme.textTheme.labelLarge)
                             ),
-                            DetailsItem(title: 'Subtotal', amount: cartState.subTotalAmount),
-                            DetailsItem(title: 'Shipping', amount: cartState.shippingFee),
-                            DetailsItem(title: 'Total', amount: cartState.totalAmount, textStyle: theme.textTheme.labelLarge),
+                            AmountItem(title: 'Subtotal', amount: cartState.subTotalAmount),
+                            AmountItem(title: 'Shipping', amount: cartState.shippingFee),
+                            AmountItem(title: 'Total', amount: cartState.totalAmount, textStyle: theme.textTheme.labelLarge),
                             const SizedBox(height: 12)
                           ]
                         )
@@ -60,7 +60,7 @@ class CartScreen extends ConsumerWidget{
       bottomNavigationBar: cartState.items.isEmpty ? null
           : BottomBarButton(
           'Checkout (\$${cartState.totalAmount})',
-          onPressed: ref.read(cartProvider.notifier).checkout
+          onPressed: ref.read(cartItemsProvider.notifier).checkout
       ),
     );
   }

@@ -156,7 +156,7 @@ class _ProductProviderElement extends AutoDisposeProviderElement<Product?>
   String get productId => (origin as ProductProvider).productId;
 }
 
-String _$isInCartStatusHash() => r'4c8c6384ba76d2a4a26b120eee2a764524f8fc86';
+String _$isInCartStatusHash() => r'd380df998d8e5f02c9542b08bad3aebca7d38974';
 
 /// See also [isInCartStatus].
 @ProviderFor(isInCartStatus)

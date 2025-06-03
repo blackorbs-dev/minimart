@@ -34,6 +34,7 @@ class ProductCard extends StatelessWidget{
           ),
           Text(
             '\$${product.price.toStringAsFixed(2)}',
+            maxLines: 2,
             style: theme.textTheme.headlineSmall,
           )
         ]

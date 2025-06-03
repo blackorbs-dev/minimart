@@ -27,7 +27,7 @@ class CartItemCard extends StatelessWidget{
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(height: 6),
-                  Text(item.product.name, style: theme.textTheme.bodySmall),
+                  Text(item.product.name, maxLines: 2, style: theme.textTheme.bodySmall),
                   Padding(
                     padding: const EdgeInsets.only(top: 6, bottom: 4),
                     child: Text(

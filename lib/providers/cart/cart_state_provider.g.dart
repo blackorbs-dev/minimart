@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'cart_state.dart';
+part of 'cart_state_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$cartStateHash() => r'996d0574bc2ba676f20b8ab432c6025faff6d05f';
+String _$cartStateHash() => r'ab641516c759153349839f5e9ff331109b6a762f';
 
 /// See also [cartState].
 @ProviderFor(cartState)
@@ -22,7 +22,7 @@ final cartStateProvider = AutoDisposeProvider<CartState>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef CartStateRef = AutoDisposeProviderRef<CartState>;
-String _$totalCartItemsHash() => r'68921b6b1f7dc392cc761904deca4bf8e9afea56';
+String _$totalCartItemsHash() => r'90aed979501c5306bf11e93f176f6be55f0686cd';
 
 /// See also [totalCartItems].
 @ProviderFor(totalCartItems)
